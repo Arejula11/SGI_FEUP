@@ -1,0 +1,98 @@
+{
+    "yasf": {
+        "globals": {
+            "background": {
+                "r": 0.5,
+                "g": 0.5,
+                "b": 0.5
+            },
+            "ambient": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "intensity": 0.5
+            }
+        },
+        "cameras": {
+            "initial": "mainCamera",
+            "mainCamera": {
+                "type": "perspective",
+                "angle": 75.0,
+                "near": 0.1,
+                "far": 1000.0,
+                "location": {
+                    "x": 10.0,
+                    "y": 10.0,
+                    "z": 10.0
+                },
+                "target": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "textures": {
+            "woodTex": {
+                "filepath": "scenes/main/textures/wood.jpg",
+                "isVideo": false
+            }
+        },
+        "materials": {
+            "basicMat": {
+                "color": {
+                    "r": 1.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 30,
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "woodTex"
+            }
+        },
+        "graph": {
+            "rootid": "scene",
+            "scene": {
+                "type": "node",
+                "children": {
+                    "nodeList": ["cubeNode"]
+                }
+            },
+            "cubeNode": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }
+                ],
+                "materialref": "basicMat",
+                "children": {
+                    "boxPrim": {
+                        "type": "box",
+                        "xyz1": {
+                            "x": -1,
+                            "y": -1,
+                            "z": -1
+                        },
+                        "xyz2": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

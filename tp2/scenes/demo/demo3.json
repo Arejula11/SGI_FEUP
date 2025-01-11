@@ -1,0 +1,350 @@
+{
+    "yasf": {
+        "globals": {
+            "background": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            },
+            "ambient": {
+                "r": 10.0,
+                "g": 10.0,
+                "b": 10.0,
+                "intensity": 2.0
+            },
+            "fog": {
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "near": 1.0,
+            "far": 100.0
+        }
+        },
+        
+        "textures": {
+            "tableTex": {
+                "filepath": "scenes/main/textures/table.png",
+                "isVideo": false
+            },
+            "legsTex": {
+                "filepath": "scenes/main/textures/legs.webp",
+                "isVideo": false
+            },
+            "woodTex": {
+                "filepath": "scenes/main/textures/wood.jpg",
+                "isVideo": false
+            },
+            "lampHeadTex": {
+                "filepath": "scenes/main/textures/lampHead.webp",
+                "isVideo": false
+            },
+            "screenTex": {
+                "filepath": "scenes/main/textures/screen.mp4",
+                "isVideo": true
+            }
+        },
+        "materials": {
+            "tableApp": {
+                "color": {
+                    "r": 0.4,
+                    "g": 0.4,
+                    "b": 0.4
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "tableTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "legsMat": {
+                "color": {
+                    "r": 0.4,
+                    "g": 0.4,
+                    "b": 0.4
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "legsTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "computerMat": {
+                "color": {
+                    "r": 0.3,
+                    "g": 0.3,
+                    "b": 0.3
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1,
+                "twosided": true
+            },
+            "pencilBodyMat": {
+                "color": {
+                    "r": 0.8,
+                    "g": 0.250,
+                    "b": 0.250
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "pencilHeadMat": {
+                "color": {
+                    "r": 0.3,
+                    "g": 0.3,
+                    "b": 0.3
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "screenMat": {
+                "color": {
+                    "r": 0.4,
+                    "g": 0.4,
+                    "b": 0.4
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "screenTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "lampHeadMat": {
+                "color": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "twosided": true,
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "textureref": "lampHeadTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            }
+        },
+        "cameras": {
+            "initial": "cam1",
+            "cam1": {
+                "type": "perspective",
+                "angle": 60,
+                "near": 0.1,
+                "far": 1,
+                "location": {
+                    "x": 15,
+                    "y": 15,
+                    "z": 15
+                },
+                "target": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        },
+        "graph": {
+            "rootid": "scene",
+            "scene": {
+                "type": "root",
+                "children": {
+                        "nodesList": ["pencilGlass"]
+                }
+            },
+            "pencilGlass": {
+                "type": "node",
+                "materialref":{
+                    "materialId": "computerMat"
+                },
+                "transforms": [{
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                }],
+                "children": {
+                    "nodesList": [ "bottomPencilGlass","bodyPencilGlass"]
+                }
+            },
+            "bottomPencilGlass": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": -1,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 90.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "circlePrim": {
+                        "type": "circle",
+                        "radius": 0.4,
+                        "segments": 128,
+                        "startAngle": 0.0,
+                        "angleLength": 6.283185307179586
+                    }
+                }
+            },
+            "bodyPencilGlass": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0.0,
+                            "y": 90.0,
+                            "z": 0.0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }
+                ],
+                "children": {
+                    "cylinderPrim": {
+                        "type": "cylinder",
+                        "base": 0.4,
+                        "top": 0.4,
+                        "height": 2.0,
+                        "slices": 20,
+                        "stacks": 20,
+                        "capsclose": true
+                    }
+                }
+            }
+            
+            
+
+            
+
+
+            
+        }
+    }
+}
