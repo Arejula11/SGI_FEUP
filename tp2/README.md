@@ -28,4 +28,4 @@ This scene represents a classroom. To model the scene, we have based it on a cla
 ## Issues/Problems
 
 - At the beginning, we had some problems with the parser, but we managed to solve them. Also, when the YASF definition was changed it made us have to change the parser.
-- The video could not be uploaded to github. You could dowload the zip to get it.
+- The video could not be uploaded to github.
