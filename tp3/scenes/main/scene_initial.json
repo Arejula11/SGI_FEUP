@@ -1,0 +1,1527 @@
+{
+    "yasf": {
+        "globals": {
+            "background": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            },
+            "ambient": {
+                "r": 0.5,
+                "g": 0.5,
+                "b": 0.5,
+                "intensity": 2.0
+            },
+            
+            "skybox": {
+                "size": {
+                    "x": 200,
+                    "y": 200,
+                    "z": 200
+                },
+                "center": {
+                    "x": 0,
+                    "y": 100,
+                    "z": 0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "intensity": 0.0,
+                "front": "scenes/main/textures/sky.png",
+                "back": "scenes/main/textures/sky.png",
+                "up": "scenes/main/textures/sky.png",
+                "down": "scenes/main/textures/sky.png",
+                "left": "scenes/main/textures/sky.png",
+                "right": "scenes/main/textures/sky.png"
+            }
+        },
+        
+        "textures": {
+            "floorTex": {
+                "filepath": "scenes/main/textures/floor.jpg",
+                "isVideo": false
+            },
+            "startTex": {
+                "filepath": "scenes/main/textures/start.png",
+                "isVideo": false
+            },
+            "powerupTex": {
+                "filepath": "scenes/main/textures/powerup.jpg",
+                "isVideo": false
+            },
+            "basketTex": {
+                "filepath": "scenes/main/textures/basket.jpg",
+                "isVideo": false
+            }
+
+        },
+        "materials": {
+            "trackMat": {
+                "color": {
+                    "r": 0,
+                    "g": 0.792,
+                    "b": 0.82
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "trunkMat": {
+                "color": {
+                    "r": 0.469,
+                    "g": 0.136,
+                    "b": 0.035
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "cloudMat": {
+                "color": {
+                    "r": 0.8,
+                    "g": 0.8,
+                    "b": 0.8
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "headTreeMat": {
+                "color": {
+                    "r": 0.469,
+                    "g": 0.9,
+                    "b": 0.035
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "floorMat": {
+                "color": {
+                    "r": 0.6,
+                    "g": 0.6,
+                    "b": 0.6
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "textureref": "floorTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "finishMat": {
+                "color": {
+                    "r": 1,
+                    "g": 0,
+                    "b": 0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "powerupMat": {
+                "color": {
+                    "r": 0.6,
+                    "g": 0.6,
+                    "b": 0.6
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "textureref": "powerupTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            }, 
+            "buttonMat": {
+                "color": {
+                    "r": 0.0,
+                    "g": 0.8,
+                    "b": 0.0
+                },
+                "emissive": {
+                    "r": 0.1,
+                    "g": 0.1,
+                    "b": 0.1
+                },
+                "shininess": 20,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "textureref": "startTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "spaceMat": {
+                "color": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 20,
+                "transparent": false,
+                "opacity": 1.0
+            },
+            "basketMat": {
+                "color": {
+                    "r": 0.6,
+                    "g": 0.6,
+                    "b": 0.6
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "textureref": "basketTex",
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "balloon1Mat": {
+                "color": {
+                    "r": 1,
+                    "g": 0,
+                    "b": 0
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "texlength_s": 1,
+                "texlength_t": 1
+            },
+            "balloon2Mat": {
+                "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 1
+                },
+                "emissive": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "specular": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0
+                },
+                "shininess": 10,
+                "transparent": false,
+                "opacity": 1.0,
+                "wireframe": false,
+                "shading": false,
+                "texlength_s": 1,
+                "texlength_t": 1
+            }
+        },
+        "cameras": {
+            "initial": "initialCam",
+            "initialCam": {
+                "type": "perspective",
+                "angle": 60,
+                "near": 0.1,
+                "far": 1000,
+                "location": {
+                    "x": 0,
+                    "y": 100,
+                    "z": 260
+                },
+                "target": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            "gameCam": {
+                "type": "perspective",
+                "angle": 40,
+                "near": 0.1,
+                "far": 1000,
+                "location": {
+                    "x": 0,
+                    "y": 10,
+                    "z": 40
+                },
+                "target": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        },
+        "graph": {
+            "rootid": "scene",
+            "scene": {
+                "type": "node",
+                "children": {
+                        "nodesList": [
+                            "spaceName",
+                            "startButton",
+                            "track",
+                            "floor",
+                            "tree1",
+                            "tree2",
+                            "tree3",
+                            "tree4",
+                            "tree5",
+                            "tree6",
+                            "tree7",
+                            "tree8",
+                            "tree9",
+                            "tree10",
+                            "tree11",
+                            "tree12",
+                            "tree13",
+                            "tree14",
+                            "tree15",
+                            "tree16",
+                            "tree17",
+                            "tree18",
+                            "tree19",
+                            "tree20",
+                            "powerup1",
+                            "powerup2",
+                            "cloud1",
+                            "cloud2",
+                            "balloon1",
+                            "balloon2",
+                            "finishLane"
+
+                        ]
+                }
+            },
+            "spaceName": {
+                "type": "node",
+                "name": "spaceName",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 50,
+                            "z": 90 
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 25, 
+                            "y": 3, 
+                            "z": 1
+                        }
+                    }
+                ],
+                "materialref": {
+                    "materialId": "spaceMat"
+                },
+                "children": {
+                    "rectanglePrim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -2, 
+                            "y": -1 
+                        },
+                        "xy2": {
+                            "x": 2, 
+                            "y": 1 
+                        },
+                        "parts_x": 1,
+                        "parts_y": 1
+                    }
+                }
+            },
+            "startButton": {
+                "type": "node",
+                "name": "startButton",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 35,
+                            "z": 90 
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 15, 
+                            "y": 10, 
+                            "z": 1
+                        }
+                    }
+                ],
+                "materialref": {
+                    "materialId": "buttonMat"
+                },
+                "children": {
+                    "rectanglePrim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": -2, 
+                            "y": -1 
+                        },
+                        "xy2": {
+                            "x": 2, 
+                            "y": 1 
+                        },
+                        "parts_x": 1,
+                        "parts_y": 1
+                    }
+                }
+            },
+            "track": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0.1,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 180,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 4.5,
+                            "y": 4.5,
+                            "z": 4.5
+                        }
+                    }
+                ],
+                "materialref":{"materialId":"trackMat"},
+                "children":{
+                    "trackPrim": {
+                        "type": "track",
+                        "points":[
+                            {
+                                "x": 0,
+                                "y": 0,
+                                "z": -10
+                            },
+                            {
+                                "x": -4.5,
+                                "y": 0,
+                                "z": -8
+                            },
+                            {
+                                "x": -5.5,
+                                "y": 0,
+                                "z": 0
+                            },
+                            {
+                                "x": -4.5,
+                                "y": 0,
+                                "z": 8
+                            },
+                            {
+                                "x": 0,
+                                "y": 0,
+                                "z": 10
+                            },
+                            {
+                                "x": 4.5,
+                                "y": 0,
+                                "z": 8
+                            },
+                            {
+                                "x": 5.5,
+                                "y": 0,
+                                "z": 0
+                            },
+                            {
+                                "x": 4.5,
+                                "y": 0,
+                                "z": -8
+                            }
+                        ],
+                        "width": 4,
+                        "number_segments": 100
+                    }
+                }
+            },
+            "track2": {
+                "type": "node",
+                "transforms": [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0.1,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 180,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 4.5,
+                            "y": 4.5,
+                            "z": 4.5
+                        }
+                    }
+                ],
+                "materialref":{"materialId":"trackMat"},
+                "children":{
+                    "trackPrim": {
+                        "type": "track",
+                        "points":[
+                            {
+                                "x": 0,
+                                "y": 0,
+                                "z": -10
+                            },
+                            {
+                                "x": 4.5,
+                                "y": 0,
+                                "z": -8
+                            },
+                            {
+                                "x": 5.5,
+                                "y": 0,
+                                "z": 0
+                            },
+                            {
+                                "x": 4.5,
+                                "y": 0,
+                                "z": 8
+                            },
+                            {
+                                "x": 1.5,
+                                "y": 0,
+                                "z": 8
+                            },
+                            {
+                                "x": 1.5,
+                                "y": 0,
+                                "z": 4
+                            },
+                            {
+                                "x": -2.2,
+                                "y": 0,
+                                "z": 4
+                            },
+                            {
+                                "x": -2.2,
+                                "y": 0,
+                                "z": 9
+                            },
+                            {
+                                "x": -7,
+                                "y": 0,
+                                "z": 9
+                            },
+                            {
+                                "x": -7,
+                                "y": 0,
+                                "z": 2
+                            },
+                            {
+                                "x": -7,
+                                "y": 0,
+                                "z": 1
+                            },
+                            {
+                                "x": -7,
+                                "y": 0,
+                                "z": -3
+                            },
+                            {
+                                "x": -4,
+                                "y": 0,
+                                "z": -3
+                            },
+                            {
+                                "x": -3.5,
+                                "y": 0,
+                                "z": -9
+                            }
+                        ],
+                        "width": 2,
+                        "number_segments": 100
+                    }
+                }
+            },
+            "floor":{
+                "type": "node",
+                "transforms" : [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 50,
+                            "y": 50,
+                            "z": 0
+                        }
+                }],
+                "materialref": {
+                    "materialId":"floorMat"
+                },
+                "children": {
+                    "rectanglePrim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": 0, 
+                            "y": 0
+                        },
+                        "xy2": {
+                            "x": 6, 
+                            "y": 6
+                        },
+                        "parts_x": 1,    
+                        "parts_y": 1
+                    }
+                }
+            },
+            "tree1": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 40,
+                            "y": 0,
+                            "z": 40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree2": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -100,
+                            "y": 0,
+                            "z": -20
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree3": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 100,
+                            "y": 0,
+                            "z": 40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree4": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -100,
+                            "y": 0,
+                            "z": -90
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree5": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -40,
+                            "y": 0,
+                            "z": -40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree6": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 80,
+                            "y": 0,
+                            "z": -20
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree7": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -90,
+                            "y": 0,
+                            "z": 40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree8": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 25,
+                            "y": 0,
+                            "z": 87
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree9": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 80,
+                            "y": 0,
+                            "z": -40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree10": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 65,
+                            "y": 0,
+                            "z": -80
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree11": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 10,
+                            "y": 0,
+                            "z": 90
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree12": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -100,
+                            "y": 0,
+                            "z": -90
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree13": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 90,
+                            "y": 0,
+                            "z": 90
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree14": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 90,
+                            "y": 0,
+                            "z": -80
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree15": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -90,
+                            "y": 0,
+                            "z": 40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree16": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -100,
+                            "y": 0,
+                            "z": 100
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree17": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 76,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree18": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -30,
+                            "y": 0,
+                            "z": 104
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "tree19": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 40,
+                            "y": 0,
+                            "z": 40
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeCones"
+                        ]
+                }
+            },
+            "tree20": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": -80
+                        }
+                    }],
+                "children": {
+                        "nodesList": [
+                            "treeDode"
+                        ]
+                }
+            },
+            "treeCones": {
+                "type": "node",
+                "children": {
+                        "nodesList": [
+                            "trunk",
+                            "headCones"
+                        ]
+                }
+            },
+            "treeDode": {
+                "type": "node",
+                "children": {
+                        "nodesList": [
+                            "trunk",
+                            "headDode"
+                        ]
+                }
+            },
+            "trunk": {
+                "type": "node",
+                "materialref": {
+                    "materialId":"trunkMat"
+                },
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 3,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children" : {
+                    "cylinderPrim": {
+                        "type": "cylinder",
+                        "base": 1.2,      
+                        "top": 1.2,       
+                        "height": 7.5,      
+                        "slices": 32,     
+                        "stacks": 1,      
+                        "capsclose": false 
+                    }
+                }
+            },
+            "headCones": {
+                "type": "node",
+                "materialref": {
+                    "materialId": "headTreeMat"
+                },
+                "children": {
+                    "nodesList": [
+                        "head1",
+                        "head2",
+                        "head3"
+                    ]
+                }
+            },
+            "head1":{
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 10,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children": {
+                    "conePrim": {
+                        "type": "cone",
+                        "base": 7,
+                        "height": 7,
+                        "slices": 6,
+                        "stacks": 20,
+                        "capsclose": false
+                    }
+                }
+            },
+            "head2":{
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 13,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children": {
+                    "conePrim": {
+                        "type": "cone",
+                        "base": 7,
+                        "height": 7,
+                        "slices": 6,
+                        "stacks": 20,
+                        "capsclose": false
+                    }
+                }
+            },
+            "head3":{
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 16,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children": {
+                    "conePrim": {
+                        "type": "cone",
+                        "base": 6,
+                        "height": 8,
+                        "slices": 6,
+                        "stacks": 20,
+                        "capsclose": false
+                    }
+                }
+            },
+            "headDode":{
+                "type": "node",
+                "materialref": {
+                    "materialId": "headTreeMat"
+                },
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 0,
+                            "y": 10,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children": {
+                    "dodePrim": {
+                        "type": "dode",
+                        "radius": 8,
+                        "detail": 0
+                    }
+                }
+            },
+            "powerup1": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": 10,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children": {
+                        "nodesList": [
+                            "powerup"  
+                        ]
+                }
+            },
+            "powerup2": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 28,
+                            "y": 2,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                }],
+                "children": {
+                        "nodesList": [
+                            "powerup"  
+                        ]
+                }
+            },
+            "powerup": {
+                "type": "node",
+                "materialref":{"materialId":"powerupMat"},
+                "children": {
+                    "PowerUpPrim": {
+                        "type": "powerup"
+                    }
+                }
+                
+            },
+            "cloud1": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -20,
+                            "y": 4,
+                            "z": -10
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.35,
+                            "y": 0.35,
+                            "z": 0.35
+                        }
+                }],
+                "children": {
+                        "nodesList": [
+                            "cloud"
+                        ]
+                }
+            },
+            "cloud2": {
+                "type": "node",
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 20,
+                            "y": 10,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 0.35,
+                            "y": 0.35,
+                            "z": 0.35
+                        }
+                }],
+                "children": {
+                        "nodesList": [
+                            "cloud"
+                        ]
+                }
+            },
+            "cloud": {
+                "type": "node",
+                "materialref":{"materialId":"cloudMat"},
+                "children": {
+                        "obstaclePrim": {
+                            "type": "obstacle"
+                        }
+                }
+            },
+            "balloon1": {
+                "type": "node",
+                "name": "balloon1",
+                "materialref":{"materialId":"balloon1Mat", "materialId2":"basketMat"},
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": 15,
+                            "y": 90,
+                            "z": 90
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 10,
+                            "y": 10,
+                            "z": 10
+                        }
+                }],
+                "children": {
+                        "balloonPrim": {
+                            "type": "balloon"
+                        }
+                }
+            },
+            "balloon2": {
+                "type": "node",
+                "name": "balloon2",
+                "materialref":{"materialId":"balloon2Mat", "materialId2":"basketMat"},
+                "transforms" : [{
+                    "type": "translate",
+                        "amount": {
+                            "x": -15,
+                            "y": 90,
+                            "z": 90
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 10,
+                            "y": 10,
+                            "z": 10
+                        }
+                }],
+                "children": {
+                        "balloonPrim": {
+                            "type": "balloon"
+                        }
+                }
+            },           
+            "finishLane":{
+                "type": "node",
+                "transforms" : [
+                    {
+                        "type": "translate",
+                        "amount": {
+                            "x": -3,
+                            "y": 0.15,
+                            "z": -45
+                        }
+                    },
+                    {
+                        "type": "rotate",
+                        "amount": {
+                            "x": -90,
+                            "y": 0,
+                            "z": -90
+                        }
+                    },
+                    {
+                        "type": "scale",
+                        "amount": {
+                            "x": 3.5,
+                            "y": 0.5,
+                            "z": 0
+                        }
+                }],
+                "materialref": {
+                    "materialId":"finishMat"
+                },
+                "children": {
+                    "rectanglePrim": {
+                        "type": "rectangle",
+                        "xy1": {
+                            "x": 0, 
+                            "y": 0
+                        },
+                        "xy2": {
+                            "x": 6, 
+                            "y": 6
+                        },
+                        "parts_x": 1,    
+                        "parts_y": 1
+                    }
+                }
+            }
+
+        }
+    }
+}
